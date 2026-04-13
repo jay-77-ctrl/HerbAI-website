@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HerbAl | Download App</title>
+   <link rel="icon" type="image/png" href="logo.png">
+  <meta
+    name="description"
+    content="Download HerbAl, an AI-powered medicinal plant identification app with offline access, herbal information, translation, favorites, and profile customization."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <header class="hero">
+    <nav class="nav container glass reveal">
+      <div class="brand">
+        <div class="brand">
+  <img src="logo.png" class="logo" />
+  <span>HerbAl</span>
+</div>
+
+      <div class="nav-links">
+        <a href="#problem">About</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#download" class="nav-btn">Download APK</a>
+      </div>
+    </nav>
+
+    <section class="hero-content container">
+      <div class="hero-copy reveal">
+        <span class="eyebrow glass-pill">AI-powered medicinal plant identification</span>
+        <h1>Preserving Traditional Herbal Knowledge Through <span>HerbAl</span></h1>
+
+        <p>
+          HerbAl is an AI-powered mobile application designed to identify medicinal
+          plants through leaf scanning. It allows users to search herbs by plant
+          name or symptoms, and access detailed herbal information including
+          description, scientific name, and planting guide. With support for
+          Bisaya and English translation, profile customization, favorites, and
+          offline functionality, HerbAl provides a practical and accessible tool
+          for learning and using medicinal plants.
+        </p>
+
+        <div class="cta-group" id="download">
+          <a class="primary-btn pulse-btn" href="app-release.apk" download>Download APK</a>
+          <a class="secondary-btn glass-btn" href="#features">Explore Features</a>
+        </div>
+
+        <div class="meta-grid">
+          <div class="meta-card glass reveal">
+            <span class="meta-label">Version</span>
+            <strong id="app-version">1.0.1</strong>
+          </div>
+          <div class="meta-card glass reveal">
+            <span class="meta-label">Platform</span>
+            <strong>Android</strong>
+          </div>
+          <div class="meta-card glass reveal">
+            <span class="meta-label">Model</span>
+            <strong>MobileNetV2</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="phone-mockup reveal floating">
+        <div class="screen glass-dark">
+          <div class="screen-top"></div>
+
+          <div class="scan-stage">
+            <div class="scan-header">
+              <span class="screen-tag">Live Scan Demo</span>
+              <span class="scan-status" id="scanStatus">Scanning leaf...</span>
+            </div>
+
+            <div class="leaf-preview">
+              <div class="leaf-shape"></div>
+              <div class="scan-box">
+                <div class="scan-line"></div>
+                <div class="corner tl"></div>
+                <div class="corner tr"></div>
+                <div class="corner bl"></div>
+                <div class="corner br"></div>
+              </div>
+            </div>
+
+            <div class="scan-result glass-card-dark" id="scanResult">
+              <div class="result-top">
+                <div>
+                  <h3 id="plantName">Lagundi</h3>
+                  <p id="scientificName"><em>Vitex negundo</em></p>
+                </div>
+                <div class="confidence-badge" id="confidenceBadge">94%</div>
+              </div>
+
+              <div class="info-list">
+                <div class="info-item">
+                  <span class="info-label">Description</span>
+                  <span class="info-value" id="plantDescription">
+                    Ang Lagundi usa sa 10 ka halamang gamot nga giendorso sa Philippine Department of Health.
+                    Ang mga dahon ug bulak niini adunay napatunayang therapeutic nga mga katanigan, labi na
+                    sa pagtambal sa ubo, hika, ug hilanat.
+                  </span>
+                </div>
+                <div class="info-item">
+  <span class="info-label">Uses</span>
+  <ul class="info-list" id="plantUses">
+    <li>Ubo</li>
+    <li>Bulutong-tubig (chickenpox)</li>
+    <li>Hilanat</li>
+    <li>Tipdas</li>
+    <li>Mga alibagha sa panit</li>
+  </ul>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="problem container reveal" id="problem">
+      <div class="section-title">
+        <span>Why HerbAl?</span>
+        <h2>Preserving Traditional Herbal Knowledge</h2>
+        <p>
+          Knowledge about medicinal plants is often passed through generations,
+          but it is now becoming less accessible to younger users. Many people
+          rely on unreliable online sources, which may lead to incorrect plant
+          identification and improper usage.
+        </p>
+        <p>
+          HerbAl addresses this gap by combining artificial intelligence with
+          structured herbal information to create a more reliable, localized,
+          and accessible learning tool.
+        </p>
+      </div>
+    </section>
+
+    <section class="solution container reveal">
+      <div class="section-title">
+        <span>Our Solution</span>
+        <h2>AI-Powered Herbal Identification</h2>
+        <p>
+          HerbAl uses a MobileNetV2-based model to analyze leaf images and
+          identify medicinal plants. It then presents useful information such as
+          description, scientific name, and planting guide to help users better
+          understand each plant.
+        </p>
+        <p>
+          The application also supports offline usage for scanning, searching,
+          and viewing herbal information. Only the sign-in feature requires an
+          internet connection.
+        </p>
+      </div>
+    </section>
+
+    <section class="features container" id="features">
+      <div class="section-title reveal">
+        <span>Application Features</span>
+        <h2>Core Features of HerbAl</h2>
+        <p>
+          HerbAl focuses on identification, smart searching, structured herbal
+          knowledge, translation, personalization, and offline accessibility.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card glass reveal">
+          <div class="icon">📷</div>
+          <h3>AI Herbal Scanning</h3>
+          <p>
+            Scan a herbal plant leaf and let the AI automatically identify it
+            using the app’s built-in recognition system.
+          </p>
+        </article>
+
+        <article class="feature-card glass reveal">
+          <div class="icon">🔍</div>
+          <h3>Smart Search</h3>
+          <p>
+            Search medicinal plants through keywords such as plant name or
+            symptoms for easier access to herbal information.
+          </p>
+        </article>
+
+        <article class="feature-card glass reveal">
+          <div class="icon">📖</div>
+          <h3>Herbal Information</h3>
+          <p>
+            View important plant details including description, scientific name and its properties,
+            and planting guide in one place.
+          </p>
+        </article>
+
+        <article class="feature-card glass reveal">
+          <div class="icon">🌐</div>
+          <h3>Bisaya & English Translation</h3>
+          <p>
+            Users can switch between Bisaya and English for a more understandable
+            and localized experience.
+          </p>
+        </article>
+
+        <article class="feature-card glass reveal">
+          <div class="icon">👤</div>
+          <h3>Profile Customization</h3>
+          <p>
+            Personalize the profile and manage user information inside the app.
+          </p>
+        </article>
+
+        <article class="feature-card glass reveal">
+          <div class="icon">⭐</div>
+          <h3>Favorites</h3>
+          <p>
+            Save selected herbal plants as favorites for quick and convenient access.
+          </p>
+        </article>
+
+        <article class="feature-card glass reveal">
+          <div class="icon">📡</div>
+          <h3>Offline Functionality</h3>
+          <p>
+            HerbAl works offline for scanning, searching, and viewing herbal
+            information.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-it-works container reveal" id="how-it-works">
+      <div class="section-title">
+        <span>How It Works</span>
+        <h2>Using HerbAl in 4 Simple Steps</h2>
+      </div>
+
+      <div class="steps simple-steps">
+        <div class="step glass reveal">
+          <div class="step-number">1</div>
+          <div>
+            <h3>Open the App</h3>
+            <p>Launch HerbAl on your Android device.</p>
+          </div>
+        </div>
+
+        <div class="step glass reveal">
+          <div class="step-number">2</div>
+          <div>
+            <h3>Scan or Search</h3>
+            <p>Scan a leaf or search by plant name or symptom.</p>
+          </div>
+        </div>
+
+        <div class="step glass reveal">
+          <div class="step-number">3</div>
+          <div>
+            <h3>Let AI Identify the Plant</h3>
+            <p>The app analyzes the leaf and predicts the medicinal plant.</p>
+          </div>
+        </div>
+
+        <div class="step glass reveal">
+          <div class="step-number">4</div>
+          <div>
+            <h3>View Plant Information</h3>
+            <p>Read the description, scientific name, and planting guide instantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight container reveal">
+      <div class="highlight-card glass">
+        <div>
+          <span class="eyebrow glass-pill">Offline-ready herbal learning</span>
+          <h2>Accessible, localized, and easy to use</h2>
+          <p>
+            HerbAl supports users who need a practical medicinal plant guide even
+            in areas with limited internet access.
+          </p>
+        </div>
+        <a class="primary-btn" href="app-release.apk" download>Get the APK</a>
+      </div>
+    </section>
+
+    <section class="install container" id="how-to-install">
+      <div class="section-title left reveal">
+        <span>Installation Guide</span>
+        <h2>How to Install HerbAl</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step glass reveal">
+          <div class="step-number">1</div>
+          <div>
+            <h3>Tap Download APK</h3>
+            <p>Press the download button on this page and wait for the file to download.</p>
+          </div>
+        </div>
+
+        <div class="step glass reveal">
+          <div class="step-number">2</div>
+          <div>
+            <h3>Open the Downloaded File</h3>
+            <p>Check your browser downloads or file manager, then open the APK.</p>
+          </div>
+        </div>
+
+        <div class="step glass reveal">
+          <div class="step-number">3</div>
+          <div>
+            <h3>Allow Installation</h3>
+            <p>Your phone may ask for permission to install apps from this source.</p>
+          </div>
+        </div>
+
+        <div class="step glass reveal">
+          <div class="step-number">4</div>
+          <div>
+            <h3>Install and Launch</h3>
+            <p>Finish installation and start using HerbAl on your Android device.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="disclaimer container reveal">
+      <div class="glass disclaimer-card">
+        <h3>Disclaimer</h3>
+        <p>
+          HerbAl is intended for educational purposes only. It does not provide
+          medical advice, diagnosis, or treatment. Users are encouraged to consult
+          healthcare professionals for proper medical guidance.
+        </p>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-card glass reveal">
+        <div>
+          <span class="eyebrow glass-pill">Ready to install?</span>
+          <h2>Download HerbAl and start identifying medicinal plants</h2>
+        </div>
+        <a class="primary-btn pulse-btn" href="app-release.apk" download>Download Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content glass reveal">
+      <p>© <span id="year"></span> HerbAl. All rights reserved.</p>
+      <p>AI-powered medicinal plant identification for Android.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
